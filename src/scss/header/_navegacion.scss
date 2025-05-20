@@ -1,0 +1,59 @@
+@use '../base/variables' as v;
+
+.header-inicio {
+    background-image: url(../img/header_inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    
+    img {
+        max-width: 20rem;
+    }
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+    a {
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+        &:hover {
+            color: v.$secundario;
+        }
+    }
+}
+
+.texto-header {
+    text-align: center;
+    color: v.$blanco;
+    margin-top: 5rem;
+    
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+} 

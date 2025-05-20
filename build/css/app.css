@@ -357,23 +357,78 @@ h3 {
   font-size: 3.2rem;
 }
 
-.header {
+header {
+  padding: 5rem 0;
+  position: relative;
+}
+header::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+header .contenido-header {
+  position: relative;
+}
+
+.header-inicio {
+  background-image: url(../img/header_inicio.jpg);
+}
+
+.header-inicio {
+  background-image: url(../img/header_inicio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+}
+
+.contenido-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-body {
-  background-color: blue;
-  font-size: 4rem;
+.barra {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+.logo img {
+  max-width: 20rem;
+}
+
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
-
-h1 {
-  color: green;
+.nav-principal a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav-principal a:hover {
+  color: #455A64;
 }
 
-div {
-  display: grid;
-  grid-template-columns: 3rem;
+.texto-header {
+  text-align: center;
+  color: #fff;
+  margin-top: 5rem;
+}
+.texto-header h1 {
+  font-size: 4rem;
+  margin: 0;
 }
