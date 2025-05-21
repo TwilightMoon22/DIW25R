@@ -1,5 +1,21 @@
 @use 'base';
+@use 'base/variables';
+@use 'base/mixins';
+@use 'base/utilidades';
+@use 'base/globales';
+@use 'base/tipografia';
+@use 'base/botones';
+
 @use 'header';
+@use 'layout/header';
+@use 'layout/footer';
+
 @use 'inicio';
+@use 'inicio/contenido';
+@use 'inicio/conoce';
+@use 'inicio/iconos';
+@use 'inicio/galeria';
+@use 'inicio/menu';
+@use 'inicio/testimoniales';
 
 // Aquí irán los estilos específicos de la aplicación 

@@ -357,6 +357,14 @@ ul {
   background-color: #5e311e;
 }
 
+.margin-negativo-10 {
+  margin-top: -10rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
 h1, h2, h3 {
   margin: 0 0 5rem 0;
   font-family: "Raleway", sans-serif;
