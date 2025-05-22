@@ -1,75 +1,30 @@
-@use '../base/variables' as v;
 @use 'base/mixins' as m;
-
-.header-inicio {
-    background-image: url(../img/header_inicio.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2rem 0;
-}
-
-.contenido-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.barra {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
-    margin-bottom: 2rem;
-    
-    img {
-        max-width: 20rem;
-    }
-}
+@use 'base/variables' as v;
 
 .nav-principal {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5rem;
-    
-    @include m.tablet {
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
-    }
-    
-    a {
-        text-align: center;
-        color: v.$blanco;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        
-        @include m.tablet {
-            margin-bottom: 0;
-        }
-        
-        &:hover {
-            color: v.$secundario;
-        }
-        
-        &.activo {
-            color: v.$secundario;
-        }
-    }
+   display: flex;
+   flex-direction: column;
+   margin-top: 5rem; //para que no se pegue el logo a la barra de navegación.
+   @include m.tablet { //para tablet y superior
+       flex-direction: row;
+       gap: 1rem; //para que los enlaces no estén pegados.
+       margin-top: 0; // para deshacer el margin que le puse en dispositivos pequeños.
+   }
+   a {
+       text-align: center;
+       color: v.$blanco;
+       font-size: 2rem;
+       text-transform: uppercase;
+       font-weight: 700;
+       margin-bottom: 1rem; // para que también estén separados cuando estén en columna.
+       @include m.tablet {
+           margin-bottom: 0;  
+       }
+       &:hover {
+           color: v.$secundario; //cuando pase el mouse por encima.
+       }
+       &.activo {
+           color: v.$secundario; //Para marcar cuál es el enlace de la página activa.
+       }
+   }
 }
-
-.texto-header {
-    text-align: center;
-    color: v.$blanco;
-    margin-top: 5rem;
-    
-    h1 {
-        font-size: 4rem;
-        margin: 0;
-    }
-} 
